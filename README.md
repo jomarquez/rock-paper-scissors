@@ -1,7 +1,7 @@
-== Rock-Paper-Scissors
+# Rock-Paper-Scissors
 
-This web application allows one user to play rock-paper-scissors and view their stats.
-It uses a front end framework and three routes, that allows a player to play their move, view their results, and their lifetime stats.
+This web application allows one user to play rock-paper-scissors, view their results and lifetime stats.
+It uses a front end framework and connects to three routes.
 
 * Ruby version: 2.0.0p247
 

@@ -22,6 +22,9 @@ class ThrowsController < ApplicationController
 
   def index
     @throws = Throw.all
+    @total_wins = results = Throw.where("result in (?)",%w(Won)).select("result")
+    @total_losses = results = Throw.where("result in (?)",%w(Lost)).select("result")
+    @total_ties = results = Throw.where("result in (?)",%w(Tied)).select("result")
   end
  
   def new

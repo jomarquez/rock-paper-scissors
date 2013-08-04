@@ -1,0 +1,13 @@
+<%= form_for(@throw) do |f| %>
+  <div class="row collapse">
+    <div class="small-8 columns">
+      <%= f.select :choice, ["Rock", "Paper", "Scissors"], class: 'small' %>
+    </div>
+  </div>
+  <div class="row collapse">
+    <div class="small-8 columns">
+      <%= f.submit 'Throw', class: 'radius button right' %>
+    </div>
+  </div>
+<% end %>
+

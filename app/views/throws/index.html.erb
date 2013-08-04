@@ -1,0 +1,29 @@
+  <div class="large-8 columns">
+    <div class="panel">
+      <h5 class="title"><a href="#">Your Lifetime Stats</a></h5>
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Player</th>
+            <th>Computer</th>
+            <th width="150">Result</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% 
+            count = 0 
+            @throws.each do |throw| 
+          %>
+          <tr>
+            <td><%= count += 1 %>.</td>
+            <td><%= throw.choice %></td>
+            <td><%= throw.computer_choice %></td>
+            <td><%= throw.result %></td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
